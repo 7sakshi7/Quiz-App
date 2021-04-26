@@ -1,0 +1,39 @@
+body{
+    /* background: url('/bg5.jpg'); */
+    background-color: rgb(76, 48, 122);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card{
+    margin: auto;
+    top: 8rem;
+}
+.btns{
+    border-radius: 23px;
+    padding: 5px 20px;
+    background-color: black;
+    margin: 2px 41px;
+}
+.btns a{
+    text-decoration: none;
+    color: white;
+   
+}
+button:not(:disabled) {
+    cursor:auto;
+}
+#cardbody{
+    display: none;
+}
+#startquiz{
+    color: white;
+}
+#strt{
+    display: block;
+    top: 12rem;
+    font-size: 33px;
+    background-color: mediumspringgreen;
+    position: relative;
+    margin: auto auto;
+}
