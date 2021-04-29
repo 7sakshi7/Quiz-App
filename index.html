@@ -23,17 +23,20 @@
                 content.</p>
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-            <li class="list-group-item">A fourth item</li>
+            <form action="">
+               <input type="radio" value="1" name="option" id="1" ><li class="list-group-item"id="ans1" onclick="score(this.id)">An item</li><br>
+               <input type="radio" value="2" name="option" id="2"><li class="list-group-item" id="ans2"onclick="score(this.id)">A second item</li><br>
+               <input type="radio" value="3" name="option" id="3"><li class="list-group-item" id="ans3"onclick="score(this.id)">A third item</li><br>
+               <input type="radio" value="4" name="option" id="4"><li class="list-group-item" id="ans4"onclick="score(this.id)">A fourth item</li><br>
+            </form>
         </ul>
         <div class="card-body">
-            <button class="btns"><a href="#" class="card-link">Submit</a></button>
-            <button class="btns"><a href="#" class="card-link">Next Question</a></button>
+            <button class="btns"><a href="#" class="card-link" id="submit">Submit</a></button>
+            <button class="btns"><a href="#" class="card-link" id="next">Next Question</a></button>
             <!-- <a href="#" class="card-link">Next Question</a> -->
         </div>
     </div>
+    <div id="result">YOUR SCORE IS - </div>
      <script src="index.js"></script>
 </body>
 
