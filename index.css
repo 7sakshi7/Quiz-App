@@ -37,3 +37,20 @@ button:not(:disabled) {
     position: relative;
     margin: auto auto;
 }
+.list-group-item{
+    display: inline-block;
+    width: 97%;
+}
+input[type="radio"]{
+    list-style: none;
+}
+input[type="radio"]:checked +li{
+background-color: aqua;
+}
+#result{
+    border: 2px solid;
+    height: 100vh;
+    font-size: 50px;
+    color: white;
+    display: none;
+}
