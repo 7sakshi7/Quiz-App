@@ -5,38 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 
 <body>
     <div id="startquiz">
-        <h1>WELCOME TO THE QUIZ !!!!! ARE YOU READY TO WIN??? </h1>
+        <h1>WELCOME TO THE QUIZ !!!!! </h1><br>
+        <h1> ARE YOU READY TO WIN??? </h1>
         <button id="strt" onclick="start()">START</button>
     </div>
-    <div id="cardbody"class="card" style="width: 28rem; height: 22rem;">
+    
+    <div id="cardbody"class="card">
         <div class="card-body">
-            <h5 id = "cardtitle"class="card-title">Card title</h5>
-            <p id = "cardtext"class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+            <h2 id = "cardtitle"class="card-title"></h2>
+            <p id = "cardtext"class="card-text"></p>
         </div>
+       
         <ul class="list-group list-group-flush">
-            <form action="">
-               <input type="radio" value="1" name="option" id="1" ><li class="list-group-item"id="ans1" onclick="score(this.id)">An item</li><br>
-               <input type="radio" value="2" name="option" id="2"><li class="list-group-item" id="ans2"onclick="score(this.id)">A second item</li><br>
-               <input type="radio" value="3" name="option" id="3"><li class="list-group-item" id="ans3"onclick="score(this.id)">A third item</li><br>
-               <input type="radio" value="4" name="option" id="4"><li class="list-group-item" id="ans4"onclick="score(this.id)">A fourth item</li><br>
+            <form action="" autocomplete="off">
+               <input type="radio" value="1" name="option" id="1" ><li class="list-group-item"id="ans1">An item</li><br>
+               <input type="radio" value="2" name="option" id="2"><li class="list-group-item" id="ans2">A second item</li><br>
+               <input type="radio" value="3" name="option" id="3"><li class="list-group-item" id="ans3">A third item</li><br>
+               <input type="radio" value="4" name="option" id="4"><li class="list-group-item" id="ans4">A fourth item</li><br>
             </form>
         </ul>
         <div class="card-body">
+            <button class="btns"><a href="#" class="card-link" id="prev">Previous</a></button>
             <button class="btns"><a href="#" class="card-link" id="submit">Submit</a></button>
-            <button class="btns"><a href="#" class="card-link" id="next">Next Question</a></button>
-            <!-- <a href="#" class="card-link">Next Question</a> -->
+            <button class="btns"><a href="#" class="card-link" id="next">Next</a></button>
         </div>
     </div>
-    <div id="result">YOUR SCORE IS - </div>
+    <div id="result"></div>
      <script src="index.js"></script>
 </body>
 
