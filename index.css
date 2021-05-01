@@ -1,56 +1,107 @@
 body{
-    /* background: url('/bg5.jpg'); */
-    background-color: rgb(76, 48, 122);
-    background-position: center;
+    background: url('/b.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
-.card{
-    margin: auto;
-    top: 8rem;
-}
-.btns{
-    border-radius: 23px;
-    padding: 5px 20px;
-    background-color: black;
-    margin: 2px 41px;
-}
-.btns a{
-    text-decoration: none;
-    color: white;
-   
-}
-button:not(:disabled) {
-    cursor:auto;
-}
-#cardbody{
-    display: none;
-}
+
+/* starting  */
+
 #startquiz{
+    width: 100vw;
+    height: 100vh;
     color: white;
+}
+#startquiz h1{
+    text-align: center;
+    position: relative;
+    top: 8rem;
 }
 #strt{
     display: block;
-    top: 12rem;
+    top: 14rem;
     font-size: 33px;
-    background-color: mediumspringgreen;
+    background-color: #0dcaf0;
     position: relative;
     margin: auto auto;
+    border-radius: 23px;
+    outline: 0;
+    border: 0;
+    padding: 10px 20px;
 }
-.list-group-item{
-    display: inline-block;
-    width: 97%;
+
+/* cards */
+
+#cardbody{
+    position: relative;
+    border: 2px solid white;
+    width: 44rem;
+    background:black;
+    box-shadow: -7px 7px 10px rgba(255, 255, 255, 0.7);
+    height: 25rem;
+    display: none;
+    top: 8rem;
+    left: 25rem;
+    border-radius: 23px;
 }
-input[type="radio"]{
-    list-style: none;
-}
-input[type="radio"]:checked +li{
-background-color: aqua;
-}
-#result{
-    border: 2px solid;
-    height: 100vh;
-    font-size: 50px;
+#cardtitle{
     color: white;
+    position: relative;
+    left: 29px;
+}
+#cardtext{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    left: 30px;
+}
+
+
+/* inputs */
+
+input[type="radio"]{
+    position: relative;
+    top: 13px;
+}
+
+input + li{
+    list-style: none;
+    color: white;
+    padding: 76px 20px;
+    margin: -83px 10px;
+}
+
+
+/* buttons */
+
+.btns{
+    border-radius: 23px;
+    padding: 12px 22px;
+    background-color: aliceblue;
+    margin: 6px 60px;
+    outline: 0;
+    border: 0;
+    box-shadow: -3px 3px 10px rgba(255,255,255,0.7);
+}
+.btns a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+
+/* result */
+
+#result{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: 13rem;
+    background: cornflowerblue;
+    height: 18vh;
+    font-size: 50px;
+    padding: 25px;
     display: none;
 }
